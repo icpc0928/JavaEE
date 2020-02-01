@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" >
+<h1>Leo Big Company .co</h1>
+<hr />
+<form action="leo04" method="get">					<!-- 一般開發可先用get 後期要正式開始了才考慮要用post或者get -->
+
+	Account: <input type = "text" name= "account" /> <br>
+	Password: <input type= "password" name ="passwd" /> <br>
+	Gender: <input type = "radio" name = "gender" value = "m" checked /> Male  
+			<input type = "radio" name = "gender" value = "f" />Female <br>
+	Like:   <input type = "checkbox" name = "like" value="1"/>打電腦
+			<input type = "checkbox" name = "like" value="2"/>打電動
+			<input type = "checkbox" name = "like" value="4"/>打籃球 <br>
+			<input type = "checkbox" name = "like" value="8"/>打麻將
+			<input type = "checkbox" name = "like" value="16"/>打毛線
+			<input type = "checkbox" name = "like" value="32"/>打小孩<br>
+			<select name = "area">
+			<option value="406">北屯</option>
+			<option value="401">西屯</option>
+			<option value="402">南屯</option>
+			<option value="403">東屯</option>
+			</select>
+			<br>
+			<textarea name="memo"></textarea>
+			
+			
+			<input type="reset" value = "clear">
+	<input type="submit" value = "OK" />   			<!-- 這個submit只會送此表單內的 -->
+</form>
