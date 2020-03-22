@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX 用57jsp來跑</title>
+</head>
+	<script>
+	var xhttp = new XMLHttpRequest();
+	
+	let i = 1;
+		setInterval(()=>{
+			i++;
+			test1();
+		},0.5*1000);
+		
+	
+	
+	function test1(){
+		xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+			    document.getElementById("here").innerHTML = 
+			    	i + " : " +this.responseText;
+			  }
+			};
+			xhttp.open("GET", "leo57.jsp", true);
+			xhttp.send();
+	}
+	
+	</script>
+
+<body>
+	<input type="button" onclick="test0()" value="test1" />
+	<hr>
+	<div id="here"></div>
+</body>
+</html>
