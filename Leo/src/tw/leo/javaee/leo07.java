@@ -73,7 +73,7 @@ public class leo07 extends HttpServlet {
 	private String createFileName(String fname ,int i) {
 		Calendar now = Calendar.getInstance();
 		int year = now.get(Calendar.YEAR);
-		int month = now.get(Calendar.DAY_OF_MONTH)+1;
+		int month = now.get(Calendar.MONTH)+1;
 		int day = now.get(Calendar.DAY_OF_MONTH);
 		return fname + year + "_" + month +"_"+day + "_" + i + ".jpg";
 	}
